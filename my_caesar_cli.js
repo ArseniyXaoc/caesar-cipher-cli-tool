@@ -14,9 +14,9 @@ programConfig(program);
 
 const options = program.opts();
 const readStream = options.input ? fs.createReadStream(options.input ) : process.stdin;
-const writeStream = fs.createWriteStream(options.output, {
-    flags: 'a+',
-});
+const writeStream = fs.createWriteStream(options.output ? options.output : 'err'
+    //{ flags: 'a+',}
+    );
 
 const transformStream = new myTransform(...checkParams(options));
 
