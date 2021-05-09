@@ -36,6 +36,11 @@ process.on('exit', code => {
   }
 });
 
+readStream.on('error', function (e) {
+    process.exitCode = 7;
+    process.stderr.write(e);
+})
+
 writeStream.on('data', chunk=>{
     console.log(chunk.toString());
 });
