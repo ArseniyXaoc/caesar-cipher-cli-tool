@@ -1,4 +1,5 @@
 const { Transform } = require('stream');
+const  cesar = require('./cesarCode');
 
 class myTransform extends Transform {
     constructor (param, key) {
@@ -15,6 +16,6 @@ class myTransform extends Transform {
             callback(err);
         }
     }
-};
+}
 
-module.export = myTransform;
+module.exports = {myTransform: myTransform};
