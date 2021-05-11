@@ -3,7 +3,8 @@ Cli for decode/encode caesar key
 To run the application, enter the following commands into the console:
 1. git clone https://github.com/ArseniyXaoc/caesar-cipher-cli-tool
 2. cd caesar-cipher-cli-tool
-3. git checkout develop  
+3. git checkout 148bdbf5
+(last commit broke Everything :( )
 4. node my_caesar_cli [-a [encode][decode]] [-s [:key]] [-i [input]] [-o [output]]
 
 ## Parametrs
